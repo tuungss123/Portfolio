@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Element } from 'react-scroll';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -52,66 +53,68 @@ const Contact = () => {
   };
 
     return (
-        <div className="flex xs:flex-col xs:h-[950px] sm:h-[800px] 2xl:h-[1100px] w-full font-[open sans] font-normal bg-[#232424]">
-            <div className=" mx-auto p-8 rounded-lg w-[30%]">
-            <h1 className="text-3xl text-center mb-8 text-[white]">Hire Me</h1>
-            <form onSubmit={handleSubmit}>
-                <div className="mb-4">
-                <label htmlFor="name" className="block text-[white]">Name</label>
-                <input
-                    type="text"
-                    id="name"
-                    name="Name"
-                    value={formData.Name}
-                    onChange={handleChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                    required
-                />
-                </div>
-                <div className="mb-4">
-                <div>
-                    <label htmlFor="email" className="block text-[white]">Your Email Address</label>
-                    <input
-                    type="email"
-                    id="email"
-                    name="Email"
-                    value={formData.Email}
-                    onChange={handleChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                    required
-                    />
-                </div>
-                </div>
-                <div className="mb-4">
-                <label htmlFor="subject" className="block text-[white]">Subject</label>
-                <input
-                    type="text"
-                    id="subject"
-                    name="Subject"
-                    value={formData.Subject}
-                    onChange={handleChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                    required
-                />
-                </div>
-                <div className="mb-4">
-                <label htmlFor="message" className="block text-[white]">Message</label>
-                <textarea
-                    rows="4"
-                    id="message"
-                    name="Message"
-                    value={formData.Message}
-                    onChange={handleChange}
-                    className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                    required
-                ></textarea>
-                </div>
-                <div className="text-center">
-                <button type="submit" className="py-2 px-4 bg-[#ffffff] text-[#000000] rounded-md hover:bg-[#3f3f41] hover:text-[white] focus:outline-none focus:bg-blue-600">Send Message</button>
-                </div>
-            </form>
-            </div>
-        </div>
+        <Element name='section3'>
+          <div className="flex xs:flex-col xs:h-[600px] sm:h-[600px] 2xl:h-[600px] w-full font-[open sans] font-normal bg-[#232424]">
+              <div className=" mx-auto p-8 rounded-lg lg:w-[30%]">
+              <h1 className="text-3xl text-center mb-8 text-[white]">Hire Me</h1>
+              <form onSubmit={handleSubmit}>
+                  <div className="mb-4">
+                  <label htmlFor="name" className="block text-[white]">Name</label>
+                  <input
+                      type="text"
+                      id="name"
+                      name="Name"
+                      value={formData.Name}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                      required
+                  />
+                  </div>
+                  <div className="mb-4">
+                  <div>
+                      <label htmlFor="email" className="block text-[white]">Your Email Address</label>
+                      <input
+                      type="email"
+                      id="email"
+                      name="Email"
+                      value={formData.Email}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                      required
+                      />
+                  </div>
+                  </div>
+                  <div className="mb-4">
+                  <label htmlFor="subject" className="block text-[white]">Subject</label>
+                  <input
+                      type="text"
+                      id="subject"
+                      name="Subject"
+                      value={formData.Subject}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                      required
+                  />
+                  </div>
+                  <div className="mb-4">
+                  <label htmlFor="message" className="block text-[white]">Message</label>
+                  <textarea
+                      rows="4"
+                      id="message"
+                      name="Message"
+                      value={formData.Message}
+                      onChange={handleChange}
+                      className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                      required
+                  ></textarea>
+                  </div>
+                  <div className="text-center">
+                  <button type="submit" className="py-2 px-4 bg-[#ffffff] text-[#000000] rounded-md hover:bg-[#3f3f41] hover:text-[white] focus:outline-none focus:bg-blue-600">Send Message</button>
+                  </div>
+              </form>
+              </div>
+          </div>
+        </Element>
     );
 }
 

@@ -14,13 +14,13 @@ const Nav = () => {
     <div className="w-full flex flex-row font-[open sans] font-thin text-[#ffffff] text-lg justify-center h-12 pt-3">
       <div className="flex flex-row">
         <animated.a style={trail[0]} className="m-2">
-          <Link to="section1" smooth={true} duration={500} className='cursor-pointer'>Skills</Link>
+          <Link to="section1" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Skills</Link>
         </animated.a>
         <animated.a style={trail[1]} className="m-2">
-          <Link to="section2" smooth={true} duration={500} className='cursor-pointer'>Projects</Link>
+          <Link to="section2" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Projects</Link>
         </animated.a>
         <animated.a style={trail[2]} className="m-2">
-          <Link to="section3" smooth={true} duration={500} className='cursor-pointer'>Hire Me</Link>
+          <Link to="section3" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Hire Me</Link>
         </animated.a>
       </div>
     </div>

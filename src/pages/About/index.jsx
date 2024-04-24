@@ -2,7 +2,7 @@
 import Django from '../../assets/svg/django.svg'
 import Javascript from '../../assets/svg/javascript.svg'
 import Material from '../../assets/svg/material.svg'
-import Mongodb from '../../assets/svg/mongodb.svg'
+import Git from '../../assets/svg/git.svg'
 import Mysql from '../../assets/svg/mysql.svg'
 import Reacticon from '../../assets/svg/react.svg'
 import Tailwind from '../../assets/svg/tailwind.svg'
@@ -75,8 +75,8 @@ const About = () => {
                                 <p>Material UI</p>
                             </animated.div>
                             <animated.div style={trail[10]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Mongodb} className='w-[50%]'></img>
-                                <p>MongoDB</p>
+                                <img src={Git} className='w-[50%]'></img>
+                                <p>Git</p>
                             </animated.div>
                             <animated.div style={trail[11]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
                                 <img src={Wordpress} className='w-[50%]'></img>

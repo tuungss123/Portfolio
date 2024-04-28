@@ -17,7 +17,7 @@ const Nav = () => {
           <Link to="section1" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Skills</Link>
         </animated.a>
         <animated.a style={trail[1]} className="m-2">
-          <Link to="section2" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Projects</Link>
+          <Link to="section2" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Works</Link>
         </animated.a>
         <animated.a style={trail[2]} className="m-2">
           <Link to="section3" smooth={true} duration={500} className='cursor-pointer hover:bg-[#948f8f]'>Hire Me</Link>

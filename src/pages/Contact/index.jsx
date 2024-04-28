@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Element } from 'react-scroll';
-
+import 'react-responsive-modal/styles.css';
+import { Modal } from 'react-responsive-modal';
+import CheckIcon from '@mui/icons-material/Check';
 const Contact = () => {
   const [formData, setFormData] = useState({
     Name: '',
@@ -19,6 +21,9 @@ const Contact = () => {
     event.preventDefault();
     await postToGoogle();
     resetForm();
+    onOpenModal()
+    setModalMessage('Message successfully sent.')
+
   };
 
   const postToGoogle = async () => {
@@ -51,6 +56,11 @@ const Contact = () => {
       Message: ''
     });
   };
+
+  const [open, setOpen] = useState(false);
+  const [modalMessage, setModalMessage] = useState('');
+  const onOpenModal = () => setOpen(true);
+  const onCloseModal = () => setOpen(false);
 
     return (
         <Element name='section3'>
@@ -96,7 +106,7 @@ const Contact = () => {
                       required
                   />
                   </div>
-                  <div className="mb-4">
+                  <div className="mb-2">
                   <label htmlFor="message" className="block text-[white]">Message</label>
                   <textarea
                       rows="4"
@@ -104,13 +114,16 @@ const Contact = () => {
                       name="Message"
                       value={formData.Message}
                       onChange={handleChange}
-                      className="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500"
+                      className="w-full px-3 pt-2 border rounded-md focus:outline-none focus:border-blue-500"
                       required
                   ></textarea>
                   </div>
                   <div className="text-center">
                   <button type="submit" className="py-2 px-4 bg-[#ffffff] text-[#000000] rounded-md hover:bg-[#3f3f41] hover:text-[white] focus:outline-none focus:bg-blue-600">Send Message</button>
                   </div>
+                  <Modal open={open} onClose={onCloseModal} center>
+                  <p className='w-[250px]' ><CheckIcon/> {modalMessage}</p>
+                  </Modal>
               </form>
               </div>
           </div>

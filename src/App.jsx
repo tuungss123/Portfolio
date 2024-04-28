@@ -6,6 +6,7 @@ import Contact from './pages/Contact/index.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import { animateScroll } from 'react-scroll';
+import Works from './pages/Works/index.jsx'
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
     <Profile/>
     </div>
     <About/>
+    <Works/>
     <Contact />
     <div className='scroll-to-top'>
       <button onClick={scrollToTop}>

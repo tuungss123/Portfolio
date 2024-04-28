@@ -9,10 +9,10 @@
 #root{
     margin: 0;
     padding: 0;
+    background-color: #232424;
 }
 .bg-image {
     background-image: url('./assets/bgbg.png');
     background-repeat: no-repeat;
     background-size: cover;
   }
-  

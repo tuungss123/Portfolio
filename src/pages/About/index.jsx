@@ -27,7 +27,7 @@ const About = () => {
     
     return (
         <Element name='section1'>
-            <div ref={ref} className="flex xs:flex-col xs:h-[880px] sm:h-[800px] 2xl:h-[1100px] w-full font-[open sans] font-normal bg-[#232424]">
+            <div ref={ref} className="flex xs:flex-col xs:h-[830px] sm:h-[800px] 2xl:h-[1100px] w-full font-[open sans] font-normal bg-[#232424]">
                     <div className="flex flex-col justify-start mt-[1rem] ml-[3rem]  text-[#fffefe]">
                         <animated.p style={trail[0]} className="text-[30px] font-semibold ml-[4rem]"><span className='text-[#ffffff]'>About </span> Me</animated.p>  
                         <div className="w-[100%] xs:mt-3 xl:mt-0 flex flex-row justify-center">

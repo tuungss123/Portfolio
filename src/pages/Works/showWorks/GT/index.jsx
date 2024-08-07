@@ -24,10 +24,10 @@ return(
            onMouseLeave={handleMouseLeave}
       >
             
-            <img className={`rounded-xl transition-all xs:w-[350px] sm:w-[400px] xs:h-[200px] sm:h-[240px] lg:w-[500px] lg:h-[280px] ${picOpacity}`} src=''/>
+            <img className={`rounded-xl transition-all xs:w-[350px] sm:w-[400px] xs:h-[200px] sm:h-[240px] lg:w-[500px] lg:h-[280px] ${picOpacity}`} src='https://github.com/tuungss123/Portfolio/blob/master/gt.png?raw=true'/>
             <div className={`absolute pb-3 pl-3 bottom-0 left-0 text-white ${buttonStyle}`}>
             {gtHover && (
-                        <p className='text-sm mb-3 opacity-50'>still in progress</p>
+                        <p className='text-sm mb-1 opacity-80 text-black'>still in progress</p>
                     )}
                 <div className='flex flex-row items-center  '>
                     <a onMouseEnter={()=> {setGtHover(true)}}

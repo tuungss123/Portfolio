@@ -7,11 +7,12 @@ import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { ReactTyped } from "react-typed";
 
 const Profile = () => {
     const [ref, inView] = useInView({
       triggerOnce: true,
-      threshold: 0.1, // Adjust threshold if needed
+      threshold: 0.1, 
     });
   
     const [animatedInView, setAnimatedInView] = useState(false);
@@ -27,6 +28,8 @@ const Profile = () => {
       transform: animatedInView ? 'translateY(0px)' : 'translateY(20px)',
       config: { mass: 2, tension: 400, friction: 20 },
     });
+
+    const iconHover = "transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
   
     return (
       <div
@@ -35,20 +38,25 @@ const Profile = () => {
       >
         <animated.div className="flex flex-col xs:w-full w-[40%] lg:pl-[150px] justify-center items-center" style={trail[0]}>
           <p className="text-[#b4b4b4] md:text-[45px] sm:text-[32px] xs:text-[2rem] xs:leading-[20px] sm:leading-[40px] xs:mt-10 sm:mt-2">Hello, I am</p>
-          <p className="text-[#ffffff] font-bold lg:text-[50px] md:text-[80px] sm:text-[40px] xs:text-[2rem]">MARK TUNGUL</p>
-          <p className="text-[#b4b4b4] font-thin xs:text-sm sm:text-md md:text-lg">A Web Developer who is passionate about</p>
+          <ReactTyped 
+            className='text-[#ffffff] font-bold lg:text-[50px] md:text-[80px] sm:text-[40px] xs:text-[2rem]' 
+            strings={["Mark Jhosua"]}
+            typeSpeed={70} 
+            backSpeed={60} 
+            loop />
+          <p className="text-[#b4b4b4] font-thin xs:text-sm sm:text-md md:text-lg mt-2">A Web Developer who is passionate about</p>
           <p className="text-[#b4b4b4] font-thin xs:text-sm sm:text-md md:text-lg">crafting seamless digital experiences.</p>
-          <a href={pdf} download='Mark Tungul Resume.pdf' target="_blank" type="button" className="bg-[#474747] hover:bg-[#727272] text-white border-white font-bold py-2 px-4 rounded mt-5"> My Resume </a>
+          <a href={pdf} download='Mark Tungul Resume.pdf' target="_blank" type="button" className={`bg-black hover:bg-[#202020] text-white border-white font-bold py-2 px-4 rounded-lg mt-5 ${iconHover}`}> My Resume </a>
   
           <div className='flex flex-row mt-5'>
             <animated.a href="https://www.facebook.com/tuungss" target="_blank" rel="noopener noreferrer" style={trail[1]}>
-              <FontAwesomeIcon className='text-xl' style={{ paddingRight: '10px', color: 'white' }} icon={faFacebook} />
+              <FontAwesomeIcon className={`text-xl ${iconHover}`} style={{ paddingRight: '10px', color: 'white' }} icon={faFacebook} />
             </animated.a>
             <animated.a href="https://www.linkedin.com/in/tungul-mark/" target="_blank" rel="noopener noreferrer" style={trail[2]}>
-              <FontAwesomeIcon className='text-xl' style={{ paddingRight: '10px', color: 'white' }} icon={faLinkedin} />
+              <FontAwesomeIcon className={`text-xl ${iconHover}`}  style={{ paddingRight: '10px', color: 'white' }} icon={faLinkedin} />
             </animated.a>
             <animated.a href="mailto:mjtungul21@gmail.com" target="_blank" rel="noopener noreferrer" style={trail[3]}>
-              <FontAwesomeIcon className='text-xl' style={{ paddingRight: '10px', color: 'white' }} icon={faEnvelope} />
+              <FontAwesomeIcon className={`text-xl ${iconHover}`}  style={{ paddingRight: '10px', color: 'white' }} icon={faEnvelope} />
             </animated.a>
           </div>
         </animated.div>

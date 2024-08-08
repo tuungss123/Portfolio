@@ -10,6 +10,7 @@
     margin: 0;
     padding: 0;
     background-color: #232424;
+    font-family: Karla;
 }
 .bg-image {
     background-image: url('./assets/bgbg.png');

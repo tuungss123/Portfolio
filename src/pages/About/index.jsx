@@ -24,6 +24,7 @@ const About = () => {
         delay: 10
       });
     
+    const skillHover = "w-[50%] transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
     
     return (
         <Element name='section1'>
@@ -48,38 +49,38 @@ const About = () => {
 
                         <div className="flex flex-row w-full mt-[3rem] justify-center xs:font-normal xl:font-semibold xs:text-md xl:text-xl">
                             <animated.div style={trail[4]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center xs:text-md xl:text:xl'>
-                                <img src={Reacticon} className='w-[50%]'></img>
+                                <img src={Reacticon} className={skillHover}></img>
                                 <p>React JS</p>
                             </animated.div>
                             <animated.div style={trail[5]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Javascript} className='w-[50%]'></img>
+                                <img src={Javascript} className={skillHover}></img>
                                 <p>JavaScript</p>
                             </animated.div>
                             <animated.div style={trail[6]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Django} className='w-[50%]'></img>
+                                <img src={Django} className={skillHover}></img>
                                 <p>Django</p>
                             </animated.div>
                             <animated.div style={trail[7]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Mysql} className='w-[50%]'></img>
+                                <img src={Mysql} className={skillHover}></img>
                                 <p>MySQL</p>
                             </animated.div>
                         </div>
 
                         <div className="flex flex-row w-full mt-[5rem] justify-center items-center xs:font-normal xl:font-semibold xs:text-md xl:text-xl">
                             <animated.div style={trail[8]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Tailwind} className='w-[50%]'></img>
+                                <img src={Tailwind} className={skillHover}></img>
                                 <p>Tailwind CSS</p>
                             </animated.div>
                             <animated.div style={trail[9]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Material} className='w-[50%]'></img>
+                                <img src={Material} className={skillHover}></img>
                                 <p>Material UI</p>
                             </animated.div>
                             <animated.div style={trail[10]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Git} className='w-[50%]'></img>
+                                <img src={Git} className={skillHover}></img>
                                 <p>Git</p>
                             </animated.div>
                             <animated.div style={trail[11]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Wordpress} className='w-[50%]'></img>
+                                <img src={Wordpress} className={skillHover}></img>
                                 <p>WordPress</p>
                             </animated.div>
                         </div>    

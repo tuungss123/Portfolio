@@ -126,6 +126,9 @@ const Contact = () => {
                   </Modal>
               </form>
               </div>
+              <div className='text-white ml-4 mt-3 text-sm'>
+              <p>© Mark Jhosua Tungul</p>
+              </div>
           </div>
         </Element>
     );

@@ -12,7 +12,7 @@ const BaleMatwa = () => {
                 <img className="w-full xs:rounded-t-xl lg:rounded-r-none lg:rounded-l-xl" src="https://github.com/tuungss123/Bale-Matwa/blob/master/bale-matwa.png?raw=true"></img>
             </div>    
 
-            <div className="flex flex-col justify-between xs:w-full lg:w-[50%] p-5 pb-1 ">
+            <div className="flex flex-col justify-between xs:w-full lg:w-[50%] p-5 pt-2 pb-1 ">
                 <div className='flex flex-col'>
                     <p className="text-[30px] font-bold">Bale Matwa</p>
                     <p className="text-[20px] text-gray-500">An advocacy website for elders.</p>

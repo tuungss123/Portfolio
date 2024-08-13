@@ -13,7 +13,7 @@ const IMSWork = () => {
                 <img className="w-full xs:rounded-t-xl lg:rounded-r-none lg:rounded-l-xl" src="https://github.com/tuungss123/Portfolio/blob/master/IMS.png?raw=true"></img>
             </div>    
 
-            <div className="flex flex-col justify-between xs:w-full lg:w-[50%] p-5 pb-1 ">
+            <div className="flex flex-col justify-between xs:w-full lg:w-[50%] p-5 pt-2 pb-1 ">
                 <div className='flex flex-col'>
                     <p className="text-[30px] font-bold">Cafe IMS</p>
                     <p className="text-[20px] text-gray-500">An inventory management system for a Cafe.</p>

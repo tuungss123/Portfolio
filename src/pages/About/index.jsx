@@ -10,6 +10,7 @@ import Wordpress from '../../assets/svg/wordpress.svg'
 import { useTrail, animated } from 'react-spring';
 import { useInView } from 'react-intersection-observer';
 import { Element } from 'react-scroll'
+import { motion } from "framer-motion";
 
 const About = () => {
     const [ref, inView] = useInView({
@@ -48,39 +49,87 @@ const About = () => {
                         <animated.p style={trail[3]} className="xs:text-[30px] xl:text-[40px] font-semibold">My Skills</animated.p>
 
                         <div className="flex flex-row w-full mt-[3rem] justify-center xs:font-normal xl:font-semibold xs:text-md xl:text-xl">
-                            <animated.div style={trail[4]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center xs:text-md xl:text:xl'>
-                                <img src={Reacticon} className={skillHover}></img>
-                                <p>React JS</p>
-                            </animated.div>
+                                <animated.div style={trail[4]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center xs:text-md xl:text:xl'>
+                                    <motion.div
+                                    className='flex justify-center'
+                                    whileHover={{ scale: 1.3 }}
+                                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                    > 
+                                        <img src={Reacticon} className={skillHover}></img>
+                                    </motion.div>
+                                    <p>React JS</p>
+                                </animated.div>
                             <animated.div style={trail[5]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Javascript} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.3 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Javascript} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>JavaScript</p>
                             </animated.div>
                             <animated.div style={trail[6]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Django} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.4 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Django} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>Django</p>
                             </animated.div>
                             <animated.div style={trail[7]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Mysql} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Mysql} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>MySQL</p>
                             </animated.div>
                         </div>
 
                         <div className="flex flex-row w-full mt-[5rem] justify-center items-center xs:font-normal xl:font-semibold xs:text-md xl:text-xl">
                             <animated.div style={trail[8]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Tailwind} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.5 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Tailwind} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>Tailwind CSS</p>
                             </animated.div>
                             <animated.div style={trail[9]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Material} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.3 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Material} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>Material UI</p>
                             </animated.div>
                             <animated.div style={trail[10]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Git} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.4 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Git} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>Git</p>
                             </animated.div>
                             <animated.div style={trail[11]} className='xs:w-[40%] md:w-[20%] flex flex-col items-center'>
-                                <img src={Wordpress} className={skillHover}></img>
+                                <motion.div
+                                className='flex justify-center'
+                                whileHover={{ scale: 1.3 }}
+                                transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                                >     
+                                    <img src={Wordpress} className='w-[50%]'></img>
+                                </motion.div>
                                 <p>WordPress</p>
                             </animated.div>
                         </div>    

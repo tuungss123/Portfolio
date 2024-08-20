@@ -1,5 +1,6 @@
 import { Link } from 'react-scroll';
 import { useTrail, animated } from 'react-spring';
+import Mark from '../../assets/svg/Mark.svg'
 
 const Nav = () => {
   const trail = useTrail(3, {
@@ -11,8 +12,13 @@ const Nav = () => {
 
 
   return (
-    <div className="w-full flex flex-row font-[open sans] font-thin text-[#ffffff] text-xl justify-center h-12 pt-3">
-      <div className="flex flex-row">
+    <div className="w-[100%] flex flex-row font-[open sans] justify-between items-center font-thin text-[#ffffff] xs:text-md xs:pl-2 xs:pr-2 sm:text-xl h-20 sm:pl-10 sm:pr-10 pt-3">
+      <div className='h-auto transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ...'>
+        <a href="https://portfolio-nn2y.onrender.com/">
+        <img src={Mark} className='xs:w-[180px] sm:w-[220px]'></img>
+        </a>
+      </div>
+      <div className="flex flex-row w-[80%] justify-end">
         <animated.a style={trail[0]} className="m-2 group relative">
           <Link to="section1" smooth={true} duration={500} className='cursor-pointer'>Skills</Link>
           <div className="bg-white h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>

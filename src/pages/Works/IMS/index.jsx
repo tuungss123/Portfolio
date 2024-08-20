@@ -8,7 +8,7 @@ const IMSWork = () => {
     const languageHover = "transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ..."
 
     return(
-        <div className=" flex xs:flex-col xs:items-center lg:items-start lg:flex-row w-[75%] bg-[#571212] rounded-xl mb-8 sticky top-20 z-20 shadow-md shadow-gray-600">
+        <div className=" flex xs:flex-col xs:items-center lg:items-start lg:flex-row w-[75%] bg-[#571212] rounded-xl mb-8 sticky top-20 z-20 shadow-md shadow-gray-600 transition ease-in-out delay-50 hover:-translate-y-1 hover:scale-110 duration-300 ...">
             <div className="xs:w-full lg:w-[50%] ">
                 <img className="w-full xs:rounded-t-xl lg:rounded-r-none lg:rounded-l-xl" src="https://github.com/tuungss123/Portfolio/blob/master/IMS.png?raw=true"></img>
             </div>    

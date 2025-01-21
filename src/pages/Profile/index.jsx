@@ -1,6 +1,6 @@
 import { useTrail, animated } from 'react-spring';
 import pic2 from '../../assets/small.png';
-import pdf from './Mark Tungul Resume.pdf';
+import pdf from './Mark-Tungul-Resume.pdf';
 import './index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faLinkedin } from '@fortawesome/free-brands-svg-icons';
